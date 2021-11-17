@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 1.3;
+}
+
+body {
+	font-family: sofia-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background-color: #12181b;
+	color: #95a0ac;
+}
+
+hr {
+	color: white;
+	margin: 3px 0 10px;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#header {
+	padding: 0 1.5rem;
+	margin: 0;
+}
+
+.header-tekst {
+	color: white;
+	font-family: cubano, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 2rem 0 1rem;
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+.dato {
+	color: white;
+	padding: 0 1.5rem;
+	margin: 2rem 0 5px;
+}
+
+.event-navn {
+	color: white;
+	margin: 0;
+	margin-bottom: 2px;
+}
+
+.beskrivelse-tekst {
+	margin: 0.5rem 0;
+}
+
+.event-boks {
+	background-color: #2a2e35;
+	padding: 0.5rem 1.5rem;
+	margin-bottom: 1rem;
+	border-radius: 0.5em;
+}
+
+.rom {
+	font-family: cubano, sans-serif;
+	margin: 0;
+}
+
+.klokkeslett {
+	width: 100%;
+	margin: 0;
+}
+
+/* Farger på rommene */
+
+.undefined {
+	color: #bdc3c7;
+}
+.farge-atelier {
+	color: #55efc4;
+}
+.farge-blackbox {
+	color: #81ecec;
+}
+.farge-dansesalen {
+	color: #74b9ff;
+}
+.farge-esport {
+	color: #a29bfe;
+}
+.farge-kafeen {
+	color: #fab1a0;
+}
+.farge-medierommet {
+	color: #ff7675;
+}
+.farge-uk {
+	color: #fd79a8;
+}
+.farge-retrohjørnet {
+	color: #ffeaa7;
+}
+
+/* Knapp */
+#last-inn {
+	color: darkslategray;
+	margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 900px) {
+	#main {
+		max-width: 1200px;
+	}
+}
+@media only screen and (min-height: 1900px) {
+	#last-inn {
+		display: none;
+	}
+}
