@@ -17,21 +17,11 @@ function initClient() {
 		})
 		.then(
 			function () {
-				gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
-				updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+				console.log("Velkommen!");
+				eventListe();
 			},
 			function (error) {
 				console.log(JSON.stringify(error, null, 2));
 			}
 		);
-}
-
-function updateSigninStatus(isSignedIn) {
-	if (isSignedIn) {
-		console.log("Du er logget inn!");
-		eventListe();
-	} else {
-		console.log("Du må logge inn");
-		gapi.auth2.getAuthInstance().signIn();
-	}
 }
