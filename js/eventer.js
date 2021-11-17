@@ -17,6 +17,7 @@ function eventListe() {
 		.then(function (response) {
 			lagEventliste(response);
 			lastInn();
+			oppdater();
 		})
 		.then(() => {
 			html = "";
